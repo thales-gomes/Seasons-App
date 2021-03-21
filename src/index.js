@@ -14,7 +14,7 @@ class App extends React.Component {
 
 	render() {
 		const { lat, errMessage } = this.state;
-		
+
 		let display = 'Loading...';
 
 		if (errMessage && !lat) {
@@ -23,10 +23,7 @@ class App extends React.Component {
 		if (!errMessage && lat) {
 			display = (<SeasonDisplay lat={lat} />)
 		}
-
-		return (
-			display
-		)
+		return display
 	}
 }
 
