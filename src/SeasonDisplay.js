@@ -8,7 +8,14 @@ const SeasonDisplay = (props) => {
 	const season = getSeason(lat, month);
 	const textDisplay =
 		season === "summer" ? "Let's hit the beach" : "Buur, it's chilly!";
-	return <div><h1>{textDisplay}</h1></div>;
+	const icon = season === "summer" ? "sun" : "snowflake";
+	return (
+		<div>
+			<i className={`icon ${icon}`}></i>
+			<h1>{textDisplay}</h1>
+			<i className={`icon ${icon}`}></i>
+		</div>
+	);
 };
 
 export default SeasonDisplay;
