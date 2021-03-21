@@ -15,8 +15,8 @@ class App extends React.Component {
 	render() {
 		const { lat, errMessage } = this.state;
 		
-		const display =	(!errMessage)?
-			(<div>Latitude: {lat} </div>) :
+		const display = (!errMessage) ?
+			(<SeasonDisplay lat={lat} />) :
 			(<div>Error: {errMessage} </div>)
 
 		return (
