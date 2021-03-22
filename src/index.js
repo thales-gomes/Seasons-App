@@ -8,8 +8,8 @@ class App extends React.Component {
 
 	componentDidMount() {
 		window.navigator.geolocation.getCurrentPosition(
-			(pos) => this.setState({ lat: pos.coords.latitude }),
-			(err) => this.setState({ errMessage: err.message })
+			pos => this.setState({ lat: pos.coords.latitude }),
+			err => this.setState({ errMessage: err.message })
 		);
 	}
 
