@@ -1,15 +1,15 @@
 import React from "react";
 import getSeason from "./getSeason";
 import seasonConfig from "./seasonConfig";
-import './SeasonDisplay.css'
+import "./SeasonDisplay.css";
 
 const month = new Date().getMonth;
 
 const SeasonDisplay = (props) => {
 	const { lat } = props;
-  const season = getSeason(lat, month);
-  const seasonInfo = seasonConfig[season];
-  const { text, iconName } = seasonInfo;
+	const season = getSeason(lat, month);
+	const seasonInfo = seasonConfig[season];
+	const { text, iconName } = seasonInfo;
 
 	return (
 		<div className={`season-display ${season}`}>
