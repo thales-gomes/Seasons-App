@@ -1,11 +1,11 @@
 const seasonConfig = {
   summer: {
     text: "Let's hit the beach",
-    iconName: "sun"
+    iconName: "sun yellow"
   },
   winter: {
     text: "Buur, it's chilly!",
-    iconName: "snowflake"
+    iconName: "snowflake blue"
   }
 }
 
